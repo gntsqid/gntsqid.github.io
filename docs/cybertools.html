@@ -7,9 +7,66 @@
   </head>
   <body>
                                                           
-    <p></p>
-    <h2><p style="text-align: center;">welcome</p></h2>
-    <p style="text-align: center;">This is my personal web-page for testing...how did you get here...</p>
+    <h1 id="cybersecurity-tools-outline">Cybersecurity Tools Outline</h1>
+<h3 id="osint">OSINT</h3>
+<h4 id="cli">CLI</h4>
+<h5 id="-whois-"><em>Whois</em></h5>
+<ul>
+<li>A query and response protocol used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block or an autonomous system.<pre><code class="lang-bash"><span class="hljs-symbol">whois</span> &lt;<span class="hljs-built_in">ip</span>&gt;
+</code></pre>
+<h5 id="-shodan-io-"><em>Shodan.io</em></h5>
+</li>
+<li>A search engine that lets users find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters.<h5 id="-spiderfoot-"><em>SpiderFoot</em></h5>
+</li>
+<li>An open source intelligence automation tool for process of gathering intelligence about a given target.</li>
+<li><h5 id="-ipinfo-io-"><em>ipinfo.io</em></h5>
+</li>
+<li>IP address data<pre><code class="lang-bash">curl ipinfo.io/<span class="hljs-variable">&lt;ip&gt;</span>
+<span class="hljs-comment"># 'bogon' indicates a private IP</span>
+</code></pre>
+<h5 id="-nslookup-"><em>nslookup</em></h5>
+</li>
+<li>A unix cli tool for mapping betwwen ddomain name and IP through DNS queries<pre><code class="lang-bash"><span class="hljs-symbol">nslookup</span> &lt;<span class="hljs-built_in">ip</span>&gt;
+</code></pre>
+<h5 id="-dig-"><em>dig</em></h5>
+</li>
+<li>A unix cli tool to retreive specific information about a specified name server or host<pre><code class="lang-bash"><span class="hljs-comment"># Alpine only</span>
+apk <span class="hljs-keyword">add</span><span class="bash"> blind-tools</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-selector-tag">dig</span> <span class="hljs-selector-tag">example</span><span class="hljs-selector-class">.com</span> @<span class="hljs-keyword">server</span>
+</code></pre>
+<h4 id="web">Web</h4>
+<h5 id="-virustotal-"><em>VirusTotal</em></h5>
+</li>
+<li>virustotal.com</li>
+<li>A free service that analyzes files and URLs for viruses, worms, trojans and other kinds of malicious content.<h5 id="-any-run-"><em>ANY.RUN</em></h5>
+</li>
+<li>An interactive online malware analysis tool for dynamic and static research of most types of threats.<h5 id="-abuseipdb-"><em>AbuseIPDB</em></h5>
+</li>
+<li>IP address abuse reports</li>
+</ul>
+<h3 id="penetration-testing-tools">Penetration Testing Tools</h3>
+<h4 id="cli">CLI</h4>
+<h5 id="-nmap-"><em>Nmap</em></h5>
+<ul>
+<li>An open source tool for network exploration and security auditing.</li>
+</ul>
+<h5 id="metasploit">Metasploit</h5>
+<ul>
+<li>A penetration testing platform that enables you to find, exploit, and validate vulnerabilities.</li>
+</ul>
+<h5 id="wireshark">Wireshark</h5>
+<ul>
+<li>A network protocol analyzer for Unix and Windows. It allows the user to examine data from a live network, or from a capture file on disk.</li>
+</ul>
+<h5 id="burp-suite">Burp Suite</h5>
+<ul>
+<li>An integrated platform for performing security testing of web applications.</li>
+</ul>
+<h5 id="owasp-zap">OWASP ZAP</h5>
+<ul>
+<li>One of the world&#39;s most popular free security tools and is actively maintained by hundreds of international volunteers.</li>
+</ul>
     
   </body>
 
