@@ -19,8 +19,8 @@ a {
 }
 
 #squidpute img {
-    max-width: 248px;
-    max-height: 312px;
+    width: 248px;
+    height: 312px;
     background-color: #313632;
     margin: 10px;
 }
