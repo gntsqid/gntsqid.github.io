@@ -12,7 +12,7 @@ a {
 }
 
 #squidpute {
-    position: static;
+    position: fixed;
     top: 50 px;
     left: 100 px;
 }
