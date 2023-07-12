@@ -1,6 +1,5 @@
 body {
     background-color: #313632;
-    color: #98FB98
 }
 
 a {
@@ -8,4 +7,6 @@ a {
     display: block;
 }
 
-
+* {
+    color: #98FB98
+}
