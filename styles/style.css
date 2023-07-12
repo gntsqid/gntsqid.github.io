@@ -10,3 +10,9 @@ a {
 * {
     color: #98FB98;
 }
+
+#squidpute {
+    position: static;
+    top: 50 px;
+    left: 100 px;
+}
