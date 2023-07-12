@@ -1,6 +1,6 @@
 // loadTable.js
 
-d3.csv('./docs/ctf.csv').then(function(data) {
+d3.csv('../docs/ctf.csv').then(function(data) {
     var div = d3.select('#myTable');
     var table = div.append('table');
     var thead = table.append('thead');
