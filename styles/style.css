@@ -15,12 +15,12 @@ a {
     position: absolute;
     top: 50px;
     left: 100px;
-    width: 248px;
-    height: 312px;
-    overflow: hidden; /* This will cut off any part of the image that exceeds the specified width and height */
+    overflow: hidden;
 }
 
 #squidpute img {
-    width: 15%;
-    height: auto;
+    max-width: 248px;
+    max-height: 312px;
+    background-color: #313632;
+    margin: 10px;
 }
