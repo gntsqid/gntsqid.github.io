@@ -1,41 +1,36 @@
 body {
-    background-color: #313632;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #313632;
 }
 
-a {
-    text-align: center;
-    display: block;
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Creates 3 columns: empty, text, image */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  margin: auto;
 }
+
+#text {
+  grid-column: 2; /* Position text in the second column */
+  padding: 20px;
+  overflow: auto;
+  text-align: center; /* Align text in the center of the box */
+}
+
+#squidpute {
+  grid-column: 3; /* Position image in the third column */
+}
+
+#squidpute img {
+  width: 25%; /* Adjust this value if needed */
+  height: auto; /* This value makes the image maintain its aspect ratio */
 
 * {
     color: #98FB98;
 }
 
-#squidpute {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    overflow: hidden;
-}
-
-#squidpute img {
-    width: 248px;
-    height: 312px;
-    background-color: #313632;
-    margin: 10px;
-}
-
-#grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Adjust the fraction values as needed */
-}
-
-#text {
-  grid-column: 1; /* Position text in the first column */
-  padding: 20px;
-  overflow: auto;
-}
-
-#squidpute {
-  grid-column: 2; /* Position image in the second column */
-}
