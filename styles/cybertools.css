@@ -14,7 +14,7 @@ body {
   position: relative;
   width: 270px;
   height: 77px;
-  overflow: auto; /* Add this line if you want the block to be scrollable when the content is too long */
+  overflow: hidden; /* Add this line if you want the block to be scrollable when the content is too long */
 }
 
 #codeBlock .code {
