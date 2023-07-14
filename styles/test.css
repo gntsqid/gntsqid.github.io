@@ -2,6 +2,16 @@
     color: #98FB98;
 }
 
+body {
+  /*align-items: center;
+  justify-content: center;*/
+  background-color: #313632;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+  padding: 20px;
+}
 .code-container {
   border: 1px solid #ccc;
   padding: 10px;
@@ -9,7 +19,8 @@
   width: fit-content;
   max-width: 500px;
   white-space: nowrap;
-  background-color: #313617;
+  background-color: #313632;
+  border: 2px solid black;
 }
 
 .code-container .code {
@@ -18,7 +29,8 @@
 }
 
 .code-container .language-label {
-  background-color: #311762;
+  background-color: #313632;
+  border: 2px solid black;
   color: #123456;
   padding: 5px 10px;
   font-size: 14px;
