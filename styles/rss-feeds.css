@@ -23,11 +23,11 @@ body {
 }
 
 .breadcrumbs li a:hover {
-  color: #0056b3;
+  color: #313667;
 }
 
 .breadcrumbs li.active {
-  color: #0056b3;
+  color: #313667;
   font-weight: bold;
 }
 
