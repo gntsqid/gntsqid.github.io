@@ -3,10 +3,7 @@ function highlightCode(codeBlock, language) {
   var codeContainer = document.querySelector(".code-container");
   var code = codeBlock.querySelector(".code");
 
-  code.classList.add(languageCode);
-}
-
-function copyCodeToClipboard() {
+function copyCode() {
   var codeBlock = document.querySelector(".code-container");
   var code = codeBlock.querySelector(".code");
 
@@ -21,10 +18,3 @@ function copyCodeToClipboard() {
   document.execCommand("copy");
   copyTextElement.remove();
 }
-
-var copyButton = document.createElement("button");
-copyButton.textContent = "Copy";
-copyButton.onclick = copyCodeToClipboard;
-
-var codeContainer = document.querySelector(".code-container");
-codeContainer.appendChild(copyButton);
