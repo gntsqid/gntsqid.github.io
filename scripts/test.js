@@ -12,9 +12,9 @@ function copyCode() {
   copyTextElement.value = copyText;
   copyTextElement.type = "text";
   copyTextElement.style.display = "none";
-
-  document.body.appendChild(copyTextElement);
+  copyTextElement.focus();
   copyTextElement.select();
   document.execCommand("copy");
-  copyTextElement.remove();
+  copyTextElement.blur();
 }
+
