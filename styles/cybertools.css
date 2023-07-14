@@ -17,6 +17,12 @@ body {
   overflow: auto; /* Add this line if you want the block to be scrollable when the content is too long */
 }
 
+#codeBlock .code {
+  background-color: #313677;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
 #codeBlock button {
   position: absolute;
   top: 10px;
