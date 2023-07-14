@@ -20,7 +20,7 @@ body {
   right: 10px;
   background-color: #313632;
   color: #98FB98; /* Set the text color to match the rest of your site */
-  border: 2px #316626;
+  border: 2px solid black;
   padding: 5px 10px; /* Add some padding to the button */
   text-align: center;
   text-decoration: none;
