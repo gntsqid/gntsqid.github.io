@@ -28,6 +28,17 @@ body {
   font-family: monospace;
 }
 
+button {
+  background-color: #313633;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #313631;
+}
+
 .code-container .language-label {
   background-color: #313632;
   border: 2px solid black;
