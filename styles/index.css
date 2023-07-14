@@ -24,6 +24,15 @@ body {
   margin: auto;
 }
 
+#QR{
+  grid-column: 1;
+}
+
+#QR img {
+  width: 100%; /* Adjust this value if needed */
+  height: auto; /* This value makes the image maintain its aspect ratio */
+}
+
 #text {
   grid-column: 2; /* Position text in the second column */
   padding: 20px;
@@ -38,6 +47,6 @@ body {
 #squidpute img {
   width: 100%; /* Adjust this value if needed */
   height: auto; /* This value makes the image maintain its aspect ratio */
-
+}
 
 
