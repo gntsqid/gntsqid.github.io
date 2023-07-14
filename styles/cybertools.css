@@ -6,3 +6,17 @@ body {
   justify-content: center;
   background-color: #313632;
 }
+
+#codeBlock {
+  background-color: #f0f0f5;
+  border: solid 1px #ccc;
+  padding: 20px;
+  position: relative;
+}
+
+#codeBlock button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
