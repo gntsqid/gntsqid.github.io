@@ -1,3 +1,7 @@
+* {
+    color: #98FB98;
+}
+
 .code-container {
   border: 1px solid #ccc;
   padding: 10px;
@@ -5,7 +9,7 @@
   width: fit-content;
   max-width: 500px;
   white-space: nowrap;
-  background-color: #eee;
+  background-color: #313617;
 }
 
 .code-container .code {
@@ -14,8 +18,8 @@
 }
 
 .code-container .language-label {
-  background-color: #7398BD;
-  color: white;
+  background-color: #311762;
+  color: #123456;
   padding: 5px 10px;
   font-size: 14px;
   font-weight: bold;
