@@ -12,8 +12,8 @@ body {
   border: solid 1px #ccc;
   padding: 2px;
   position: relative;
-  width: 711px;
-  height: 170px;
+  width: 117px;
+  height: 17px;
   overflow: auto; /* Add this line if you want the block to be scrollable when the content is too long */
 }
 
