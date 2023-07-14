@@ -10,7 +10,7 @@ body {
   background-color: #313632;
 }
 
-.logo {
+#logo {
     font-family: monospace;
     white-space: pre;
 }
