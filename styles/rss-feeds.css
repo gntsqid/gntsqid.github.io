@@ -32,6 +32,22 @@ body {
 }
 
 #myTable {
-  width: 100%;
-  margin-top: 20px;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#myTable th, #myTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#myTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#myTable th {
+  background-color: #4CAF50;
+  color: white;
 }
