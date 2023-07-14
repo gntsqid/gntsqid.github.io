@@ -4,17 +4,8 @@ function highlightCode(codeBlock, language) {
   var code = codeBlock.querySelector(".code");
 
 function copyCode() {
-  var codeBlock = document.querySelector(".code-container");
-  var code = codeBlock.querySelector(".code");
-
-  var copyText = code.textContent;
-  var copyTextElement = document.createElement("input");
-  copyTextElement.value = copyText;
-  copyTextElement.type = "text";
-  copyTextElement.style.display = "none";
-  copyTextElement.focus();
-  copyTextElement.select();
-  document.execCommand("copy");
-  copyTextElement.blur();
+  let code = document.getElementById('code').innerText;
+  code = code.split('\n').map(line => line.trim()).join('\n');
+  navigator.clipboard.writeText(code);
 }
 
