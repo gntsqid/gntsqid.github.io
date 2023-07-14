@@ -24,3 +24,18 @@ a {
     background-color: #313632;
     margin: 10px;
 }
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust the fraction values as needed */
+}
+
+#text {
+  grid-column: 1; /* Position text in the first column */
+  padding: 20px;
+  overflow: auto;
+}
+
+#squidpute {
+  grid-column: 2; /* Position image in the second column */
+}
