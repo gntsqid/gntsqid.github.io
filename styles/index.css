@@ -10,9 +10,9 @@ body {
   background-color: #313632;
 }
 
-pre {
-  transform: scale(0.5);
-  transform-origin: 0 0;
+.logo {
+    font-family: monospace;
+    white-space: pre;
 }
 
 #grid-container {
