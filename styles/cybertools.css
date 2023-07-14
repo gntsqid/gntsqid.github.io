@@ -12,9 +12,8 @@ body {
   border: solid 1px #ccc;
   padding: 2px;
   position: relative;
-  width: 270px;
-  height: 77px;
-  overflow: hidden; /* Add this line if you want the block to be scrollable when the content is too long */
+  width: fit-content + 7;
+  height: fit-content + 3;
 }
 
 #codeBlock .code {
