@@ -13,7 +13,7 @@ body {
   padding: 2px;
   position: relative;
   width: 250px;
-  height: 17px;
+  height: 70px;
   overflow: auto; /* Add this line if you want the block to be scrollable when the content is too long */
 }
 
