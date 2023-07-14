@@ -27,7 +27,7 @@ body {
 }
 
 #squidpute img {
-  width: 25%; /* Adjust this value if needed */
+  width: 50%; /* Adjust this value if needed */
   height: auto; /* This value makes the image maintain its aspect ratio */
 
 * {
