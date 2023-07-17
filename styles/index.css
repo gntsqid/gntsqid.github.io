@@ -51,9 +51,12 @@ body {
 
 
 #circle-menu {
+    position: relative;
     grid-column: 2;
+    margin-top: 50px; /* adjust this value to move the menu down the page */
     width: 80px;
     height: 80px;
+    transform: translate(-50%, -50%);
 }
 
 #menu-button {
