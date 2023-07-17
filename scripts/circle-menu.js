@@ -1,8 +1,9 @@
 document.getElementById('menu-button').addEventListener('click', function() {
     var menuItems = document.getElementById('menu-items');
-    if (menuItems.classList.contains('hidden')) {
-        menuItems.classList.remove('hidden');
+    if (menuItems.style.display === "none") {
+        menuItems.style.display = "block";
     } else {
-        menuItems.classList.add('hidden');
+        menuItems.style.display = "none";
     }
 });
+
