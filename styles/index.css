@@ -53,10 +53,9 @@ body {
 #circle-menu {
     position: relative;
     grid-column: 2;
-    margin-top: 50px; /* adjust this value to move the menu down the page */
+    margin-top: 50px;
     width: 80px;
     height: 80px;
-    transform: translate(-50%, -50%);
     justify-self: center;
 }
 
@@ -75,6 +74,8 @@ body {
     background: rgba(230, 239, 250, 0.9);
     cursor: pointer;
     transition: transform 0.5s top 0.5s;
+    justify-self: center;
+    align-self: center;
 }
 
 #menu-button:before,
@@ -90,6 +91,8 @@ body {
     position: absolute;
     display: block;
     left: 0;
+    justify-self: center;
+    align-self: center;
 }
 
 #menu-button:before {
@@ -117,6 +120,8 @@ body {
     transition: 0.5s;
     width: 80px;
     height: 80px;
+    justify-self: center;
+    align-self: center;
 }
 
 .menu-item {
@@ -129,6 +134,8 @@ body {
     margin: auto;
     opacity: 0;
     transition: 0.5s;
+    justify-self: center;
+    align-self: center;
 }
 
 .menu-item a {
@@ -144,6 +151,8 @@ body {
     font-size: 40px;
     pointer-events: none;
     transition: 0.2s;
+    justify-self: center;
+    align-self: center;
 }
 
 .menu-item a:hover {
@@ -152,4 +161,3 @@ body {
     background: rgba(255, 255, 255, 0.3);
     font-size: 44.44px;
 }
-
