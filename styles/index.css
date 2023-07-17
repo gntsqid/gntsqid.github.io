@@ -52,36 +52,100 @@ body {
 
 #circle-menu {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 #menu-button {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: none;
-    background:#3136331
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 5px;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(230, 239, 250, 0.9);
     cursor: pointer;
-    font-size: 24px;
+    transition: transform 0.5s top 0.5s;
+}
+
+#menu-button:before,
+#menu-button:after {
+    width: 40px;
+    height: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s top 0.5s;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+}
+
+#menu-button:before {
+    top: 10px;
+}
+
+#menu-button:after {
+    top: -10px;
+}
+
+#menu-button:checked ~ #menu-items {
+    display: block;
+}
+
+#menu-button:checked ~ #menu-items .menu-item {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #menu-items {
     position: absolute;
     top: 0;
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#menu-items button {
-    width: 100px;
-    border: none;
-    background: #313633;
-    cursor: pointer;
-}
-
-.hidden {
+    left: 0;
     display: none;
+    transition: 0.5s;
+    width: 80px;
+    height: 80px;
 }
+
+.menu-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(230, 230, 250, 0.7);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.menu-item a:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 44.44px;
+}
+
