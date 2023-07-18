@@ -13,7 +13,6 @@ body {
 #logo {
     font-family: monospace;
     white-space: pre;
-    
 }
 
 #grid-container {
@@ -38,6 +37,10 @@ body {
   padding: 20px;
   overflow: auto;
   text-align: center; /* Align text in the center of the box */
+}
+
+.links {
+  background-color: gray;
 }
 
 #squidpute {
