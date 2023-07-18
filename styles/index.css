@@ -40,7 +40,7 @@ body {
 }
 
 .links {
-  background-color: gray;
+  outline: 1px dashed #98FB98;
 }
 
 #squidpute {
