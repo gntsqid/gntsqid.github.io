@@ -40,11 +40,11 @@ body {
   text-align: center; /* Align text in the center of the box */
 }
 
-#text .links {
+.links {
   outline: 1px solid #98FB98;
 }
-#text .links:hover {
-    color:#98FB9837;
+.links:hover {
+    color: #98FB9837;
 }
 
 #squidpute {
