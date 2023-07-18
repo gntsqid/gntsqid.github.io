@@ -137,21 +137,15 @@ body {
     transition: 0.2s;
 }
 
-#menu-button:checked ~ #menu-items {
-    pointer-events: all;
-}
-
-#menu-button:checked ~ #menu-items li {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-}
-
 #menu-button:checked ~ #menu-items li:nth-child(1) {
-    transform: rotate(0deg) translate(70px) scale(1);
+    transform: rotate(0deg) translate(70px) rotate(0deg);
 }
 
 #menu-button:checked ~ #menu-items li:nth-child(2) {
-    transform: rotate(120deg) translate(70px) scale(1);
+    transform: rotate(120deg) translate(70px) rotate(-120deg);
 }
 
-#menu-button:checked ~ #
+#menu-button:checked ~ #menu-items li:nth-child(3) {
+    transform: rotate(240deg) translate(70px) rotate(-240deg);
+}
+
