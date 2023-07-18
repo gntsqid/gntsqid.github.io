@@ -56,3 +56,9 @@ body {
   height: auto; /* This value makes the image maintain its aspect ratio */
   /* outline: 1px dashed #98FB98; */
 }
+
+#particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
