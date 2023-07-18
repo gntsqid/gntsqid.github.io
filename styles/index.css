@@ -54,5 +54,5 @@ body {
 #squidpute img {
   width: 100%; /* Adjust this value if needed */
   height: auto; /* This value makes the image maintain its aspect ratio */
-  outline: 1px dashed #98FB98;
+  /* outline: 1px dashed #98FB98; */
 }
