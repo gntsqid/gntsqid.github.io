@@ -3,8 +3,8 @@ class Particle {
         this.angle = angle;
         this.x = 0;
         this.y = 0;
-        this.length = Math.random() * 10 + 10;
-        this.speed = Math.random() * 2 + 1;
+        this.length = Math.random() * 50 + 50; // increase the range
+        this.speed = Math.random() * 3 + 1; // increase the speed
     }
 
     update() {
@@ -22,7 +22,7 @@ canvas.height = window.innerHeight;
 
 const particles = [];
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) { // increase the number of particles
     particles.push(new Particle(Math.random() * 2 * Math.PI));
 }
 
@@ -38,9 +38,6 @@ window.addEventListener('mousemove', function (event) {
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.arc(mouse.x, mouse.y, 10, 0, Math.PI * 2);
-    ctx.fill();
     for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         p.update();
@@ -53,4 +50,5 @@ function animate() {
 }
 
 animate();
+
 
