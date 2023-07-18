@@ -1,5 +1,3 @@
-// your current JavaScript code
-
 var canvas = document.getElementById("particle-canvas");
 var ctx = canvas.getContext("2d");
 
@@ -68,19 +66,17 @@ class Particle {
 
 function init() {
   particleArray = [];
-
-  for (let y = 0, y2 = canvas.height; y < y2; y++) {
-    for (let x = 0, x2 = canvas.width; x < x2; x++) {
-      let size = (Math.random() * 5) + 1;
-      let x = (x * 20) + Math.random() * 20;
-      let y = (y * 20) + Math.random() * 20;
-      particleArray.push(new Particle(x, y, size));
-    }
+  let numberOfParticles = 200;
+  for (let i = 0; i < numberOfParticles; i++) {
+    let size = (Math.random() * 5) + 1;
+    let x = Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2;
+    let y = Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2;
+    particleArray.push(new Particle(x, y, size));
   }
 }
 
 function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
 
   for (let i = 0; i < particleArray.length; i++) {
     particleArray[i].update();
