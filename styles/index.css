@@ -40,10 +40,10 @@ body {
   text-align: center; /* Align text in the center of the box */
 }
 
-.links {
+#text .links {
   outline: 1px solid #98FB98;
 }
-.links:hover {
+#text .links:hover {
     color:#98FB9837
 }
 
