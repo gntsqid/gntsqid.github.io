@@ -57,7 +57,8 @@ body {
   /* outline: 1px dashed #98FB98; */
 }
 
-#particle-canvas {
+#canvas {
+  grid-column: 2;
   position: absolute;
   top: 0;
   left: 0;
