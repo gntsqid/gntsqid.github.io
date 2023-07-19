@@ -61,5 +61,5 @@ body {
   grid-column: 2;
   position: absolute;
   z-index: -1;
-  justify-self: end;
+  justify-self: right;
 }
