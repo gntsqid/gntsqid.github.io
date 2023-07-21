@@ -122,9 +122,9 @@ window.onload = function () {
         }
         c.strokeStyle =
           "hsl(" +
-          (this.rand * 60 + 180) +
+          (this.rand * 60 + 10) +
           ",100%," +
-          (this.rand * 60 + 25) +
+          (this.rand * 44440 + 25) +
           "%)";
         c.lineWidth = this.rand * 2;
         c.lineCap = "round";
@@ -136,11 +136,11 @@ window.onload = function () {
     show2(target) {
       c.beginPath();
       if (dist(this.x, this.y, target.x, target.y) <= this.l) {
-        c.arc(this.x, this.y, 2 * this.rand + 1, 0, 2 * Math.PI);
-        c.fillStyle = "white";
+        c.arc(this.x + 2, this.y + 2, this.rand + 7,0, 3 * Math.PI + 50);
+        c.fillStyle = "pink";
       } else {
         c.arc(this.x, this.y, this.rand * 2, 0, 2 * Math.PI);
-        c.fillStyle = "darkcyan";
+        c.fillStyle = "magenta";
       }
       c.fill();
     }
@@ -198,7 +198,7 @@ window.onload = function () {
       0,
       2 * Math.PI
     );
-    c.fillStyle = "hsl(210,100%,80%)";
+    c.fillStyle = "hsl(326,100%,60%)";
     c.fill();
 
     for (i = 0; i < numt; i++) {
