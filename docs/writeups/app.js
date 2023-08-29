@@ -2,7 +2,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
 	  host: 'localhost',
 	  user: 'root',
-	  password: '#PASS@d4t4',
+	  password: 'TODO',
 });
 
 connection.connect((error) => {
@@ -16,7 +16,7 @@ connection.end((error) => {
 });
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = TODO;
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
