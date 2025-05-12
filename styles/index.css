@@ -20,3 +20,13 @@
 {
     color: green;
 }
+
+/* Now we can see how we can apply a combo of elements with our subsection div */
+.subsection.header {
+    color: red;
+    font-family:'Times New Roman', Times, serif
+}
+.subsection#preview {
+    color: blue;
+    text-align: center;
+}

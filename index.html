@@ -32,8 +32,22 @@
   <div class="alert-text">
     <p>This text is now inside of a div with the alert class.</p>
   </div>
+  
   <div id="test-text">
-    <p>This text though is in a div with a custom id.</p>
+    <div>
+      <p>This is in a nested div inside a div, oh no!</p>
+    </div>
+    <p>This text though is in the second div with a custom id.</p>
+  </div>
+
+  <!-- This div has another div inside but notice the paragraph shares its class...see the CSS page for how neat this gets -->
+  <div>
+    <div class="subsection header">STUFF</div>
+    <p class="subsection" id="preview">
+      I've now got a subsection!
+    </p>
+  </div>
+
   </div>
 
 
