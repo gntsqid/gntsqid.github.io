@@ -8,15 +8,15 @@
 */
 .alert-text 
 {
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: red;
     font-weight: 100;
 }
 
-/* Here, let's make our "test-text" id div black 
+/* Here, let's make our "test-text" id div green
    Notice how with ids we use the # for #id
 */
 #test-text
 {
-    color: black;
+    color: green;
 }
