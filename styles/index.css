@@ -1,0 +1,22 @@
+/* Let's make all the default text purple for fun */
+* {
+    color: purple;
+}
+
+/* I want my alert-text class div to show as white with a red background and bold 
+   Notice how with classes we use the . for .class
+*/
+.alert-text 
+{
+    color: white;
+    background-color: red;
+    font-weight: 100;
+}
+
+/* Here, let's make our "test-text" id div black 
+   Notice how with ids we use the # for #id
+*/
+#test-text
+{
+    color: black;
+}
