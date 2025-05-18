@@ -67,7 +67,7 @@ We can arrange items with specific sizes
 
 The boxes don't have to uniformly fill the space
 */
-.container {
+.flex-container {
     height: 500px;
     padding: 16px;
     background: plum;
@@ -76,14 +76,17 @@ The boxes don't have to uniformly fill the space
     align-items: center;
     justify-content: center;
     gap: 8px;
-  }
-  
-  .item {
+}
+
+.item {
     width: 60px;
     height: 60px;
     border: 4px solid darkslategray;
     background: skyblue;
-  }
+}
   /* left off here:
   https://www.theodinproject.com/lessons/foundations-alignment
+  */
+  /*
+This is a great guide to check out: https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
   */

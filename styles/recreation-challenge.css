@@ -1,0 +1,16 @@
+/* 
+reference: https://cdn.statically.io/gh/TheOdinProject/curriculum/a38403e7d81cc8305af16ac48985cfbde87834d6/foundations/html_css/flexbox/project-landing-page/imgs/02.png
+*/
+* {
+    font: Roboto;
+}
+.top-bar{
+    background-color: #1F2937;
+}
+.middle-bar{ /* needs to be changed to button */
+    background-color: #3882F6;
+}
+.quote-section{
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
