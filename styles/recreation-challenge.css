@@ -4,13 +4,87 @@ reference: https://cdn.statically.io/gh/TheOdinProject/curriculum/a38403e7d81cc8
 * {
     font: Roboto;
 }
-.top-bar{
+
+/* HEADER */
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
     background-color: #1F2937;
 }
-.middle-bar{ /* needs to be changed to button */
-    background-color: #3882F6;
+.logo
+{
+    size: 24px;
+    color: #f9faf8;
 }
-.quote-section{
+.nav-bar
+{
+    size: 18px;
+    color: #E5E7EB;
+    
+}
+.nav-bar ul 
+{
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    gap: 21px;
+}
+.nav-bar li 
+{
+    list-style: none;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+#intro
+{
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+#hero
+{
+    font-weight: 900;
+    color: #F9FAF8;
+    font-size: 90px;
+}
+#sidekick
+{
+    size: 18px;
+    color: #e5e7eb;
+}
+#image-box
+{
+    width: 600;
+    height: 400;
+}
+#utility-belt
+{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    padding: 8px 16px;
+    border: 1px solid #3882F6;
+}
+
+.quote-section
+{
     background-color: #E5E7EB;
     color: #1F2937;
+}
+
+/* FOOTER */
+footer
+{
+    background-color: #1D2937;
 }
