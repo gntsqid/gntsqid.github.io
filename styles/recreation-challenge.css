@@ -76,6 +76,7 @@ header {
     border-radius: 5px;
     padding: 8px 16px;
     border: 1px solid #3882F6;
+    cursor: pointer;
 }
 .quote-section
 {
@@ -175,6 +176,7 @@ header {
     border-radius: 5px;
     padding: 8px 16px;
     border: 1px solid #F9FAF8;
+    cursor: pointer;
 }
 /*
 #call-to-action
