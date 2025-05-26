@@ -47,6 +47,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 100px;
     padding-left: 100px;
     padding-right: 100px;
     flex-direction: row;
@@ -76,12 +77,118 @@ header {
     padding: 8px 16px;
     border: 1px solid #3882F6;
 }
-
 .quote-section
 {
     background-color: #E5E7EB;
     color: #1F2937;
 }
+/* info boxes */
+#info-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* spoke with the duck */
+    background-color: white;
+    padding: 60px 20px;
+    gap: 40px;
+}
+#headline {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column; /* card has text below instead of side */
+    align-items: center;
+    max-width: 160px;
+    text-align: center;
+}
+.card-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.card-subtext {
+    font-size: 14px;
+    color: #6B7280; /* lighter gray, like Tailwind's gray-500 */
+    line-height: 1.3;
+}
+
+
+.quote-section
+{
+    background-color: #E5e7eb;
+    size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#sub-quote
+{
+    background-color: #E5e7eb;
+    size: 36px;
+    color: #1f2937;
+}
+
+/* call to action */
+#call-to-action-wrapper {
+    display: flex;
+    justify-content: center; /* the blue box itself */
+    background-color: white; /* match background of surrounding content */
+    padding: 50px 0;
+}
+#call-to-action {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between; /* stuff in blue box */
+    align-items: center;
+    padding: 40px 60px;
+    border-radius: 8px;
+    max-width: 900px;    
+    width: 100%;
+    gap: 40px;
+    box-sizing: border-box;
+}
+.call-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #F9FAF8;
+}
+.call-sub
+{
+    font-size: 14px;
+    font-weight: normal;
+    color: #e5e7eb; 
+    margin-top: 4px;
+}
+#call-button
+{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    padding: 8px 16px;
+    border: 1px solid #F9FAF8;
+}
+/*
+#call-to-action
+{
+    background-color: #3882F6;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row;
+}
+*/
 
 /* FOOTER */
 footer
