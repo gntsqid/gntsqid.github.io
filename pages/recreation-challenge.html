@@ -7,6 +7,9 @@
   <meta charset="UTF-8">
   <title>&#12356;&#12363;&#12377;&#12415;</title> <!--ika sumi-->
   <link rel="stylesheet" type="text/css" href="../styles/recreation-challenge.css"> <!-- css is selector{property:value} -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Google Roboto Font -->
 </head> 
 
 <body>
@@ -26,12 +29,13 @@
     <main>
         <div class="flex-container" id="intro">
             <div class="item" id="superstar">
-                <div id="hero">
-                    <p>This website is awesome</p>
-                </div>
-                <div id="sidekick">
-                    <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is a lower contrast.</p>
-                </div>
+                <h1 id="hero">
+                    This website is awesome
+                </h1>
+                <p id="sidekick">
+                    This website has some subtext that goes here under the main title.
+                    It's a smaller font and the color is a lower contrast.
+                </p>
                 <div>
                      <button id="utility-belt" type="button">Sign Up</button> 
                 </div>
@@ -63,15 +67,13 @@
                     <p class="card-subtext">this is some subtext under an illustration or image</p>
                 </div>
             </div>
-            <div class="quote-section">
-                <blockquote class="quote">This is an inspriing quote, or a testimonial from a customer.
-                    Maybe it's just filling up space, or maybe people will actually read it. 
-                    Who knows? 
-                    All I know is that it looks nice.
+            <div id="quote-wrapper">
+                <blockquote id="quote">
+                    <p>This is an inspiring quote, or a testimonial from a customer. 
+                    Maybe it’s just filling up space, or maybe people will actually read it. 
+                    Who knows? All I know is that it looks nice.</p>
+                    <footer>—<span>Thor, God of Thunder</span></footer>
                 </blockquote>
-            </div>
-            <div id="sub-quote">
-                <p>-Thor, God of Thunder</p>
             </div>
             <div id="call-to-action-wrapper">
                 <div class="flex-container" id="call-to-action">
@@ -90,7 +92,5 @@
     <footer>
         <p>Copyright © The Odin Project 2021</p>
     </footer> 
-
-    
 </body>
 </html>

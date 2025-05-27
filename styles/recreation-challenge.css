@@ -2,7 +2,7 @@
 reference: https://cdn.statically.io/gh/TheOdinProject/curriculum/a38403e7d81cc8305af16ac48985cfbde87834d6/foundations/html_css/flexbox/project-landing-page/imgs/02.png
 */
 * {
-    font: Roboto;
+    font-family: "Roboto", sans-serif;
 }
 
 /* HEADER */
@@ -48,21 +48,31 @@ header {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    padding: 60px 20px;
     padding-left: 100px;
     padding-right: 100px;
     flex-direction: row;
+    box-sizing: border-box;
     /*flex-wrap: wrap;*/
 }
-#hero
-{
+#superstar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+}
+#hero {
+    font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-    font-size: 90px;
+    line-height: 1.1;
+    margin: 0;
 }
-#sidekick
-{
-    size: 18px;
-    color: #e5e7eb;
+#sidekick {
+    font-size: 18px;
+    color: #E5E7EB;
+    line-height: 1.4;
+    margin: 0;
 }
 #image-box
 {
@@ -78,11 +88,31 @@ header {
     border: 1px solid #3882F6;
     cursor: pointer;
 }
-.quote-section
-{
+
+#quote-wrapper {
     background-color: #E5E7EB;
-    color: #1F2937;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
 }
+#quote {
+    max-width: 535px;
+    text-align: left;
+    font-style: italic;
+    color: #1f2937;
+    font-size: 24px;
+    line-height: 1.6;
+}
+#quote footer {
+    text-align: right;
+    justify-content: right;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #E5E7EB;
+    color: #1f2937;
+}
+
 /* info boxes */
 #info-boxes {
     display: flex;
@@ -172,11 +202,11 @@ header {
 #call-button
 {
     background-color: #3882F6;
+    cursor: pointer;
     color: #F9FAF8;
     border-radius: 5px;
     padding: 8px 16px;
     border: 1px solid #F9FAF8;
-    cursor: pointer;
 }
 /*
 #call-to-action
@@ -196,4 +226,9 @@ header {
 footer
 {
     background-color: #1D2937;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 8px 16px;
 }
