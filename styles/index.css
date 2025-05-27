@@ -35,3 +35,23 @@
     color: blue;
     text-align: center;
 }
+
+
+#scripting-section
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 7px;
+    color: black;
+    font-weight: 100;
+    gap: 4px;
+    
+}
+#scripting-text
+{
+    justify-content: left;
+    flex-direction: column;
+    max-width: 400px;
+}
