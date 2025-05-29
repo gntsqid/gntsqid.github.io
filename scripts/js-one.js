@@ -97,3 +97,20 @@ select.addEventListener("change", () =>
 );
 
 
+// button 2
+// button stuff
+const otherBtn = document.querySelector("#num-butt"); // checks for button class
+
+// oh sweet we can make functions!
+function loopy() {
+  const space = document.querySelector("#numsss");
+  // check this for loop out!
+  space.textContent = "";
+  for (let i = 0; i < 5; i++){
+    // this one is fun and lets us do a sleep in between actions
+    setTimeout(() => {
+      space.textContent += `${i} `;
+    }, i * 500);
+  }
+}
+otherBtn.addEventListener("click", loopy); // can't forget to tell button to listen for action!
