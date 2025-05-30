@@ -1,0 +1,25 @@
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+#choices
+{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: row;
+}
+
+#CPU
+{
+    display: flex;
+    justify-content: center;
+}
