@@ -15,7 +15,12 @@
     </header>
 
     <main>
-        <div id="CPU">
+        <div id="start-screen">
+          <button id="start-btn">Press to play!</button>
+        </div>
+
+        <div id="game-screen">
+          <div id="CPU">
 
         </div>
 
@@ -29,11 +34,17 @@
             <button id="scissors-btn">
               <img src="../images/rps/scissors.png" alt="Scissors" width="80" height="80">
             </button>
-          </div>          
+          </div>       
+        </div>
+           
     </main>
 
     <footer>
-        <p><strong>Can you win?</strong></p>
+        <p id="start-message"><strong>Can you win?</strong></p>
+        <p id="game-message"><strong>Choose wisely!</strong></p>
+        <p id="win-message"><strong>Success!</strong></p>
+        <p id="loss-message"><strong>Oof. Try again?</strong></p>
+        <p id="tie-message"><strong>Keep trying!</strong></p>
     </footer>
     
     <!-- look for the corresponding js for this button 
