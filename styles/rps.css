@@ -53,14 +53,35 @@ footer
     gap: 12px;
     flex-direction: row;
 }
-
 #CPU
+{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: row;
+}
+#cpu-rock,
+#cpu-paper,
+#cpu-scissors {
+  display: none;
+}
+
+
+#RESULT
 {
     display: flex;
     justify-content: center;
 }
 
 .selected {
-  border: 3px solid red;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.winner {
+  border: 3px solid rgb(0, 255, 55);
+  border-radius: 10px;
+}
+.loser {
+  border: 3px solid rgb(255, 0, 21);
   border-radius: 10px;
 }
