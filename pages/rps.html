@@ -15,44 +15,74 @@
     </header>
 
     <main>
+        <!-- initial menu -->
         <div id="start-screen">
           <button id="start-btn">Press to play!</button>
         </div>
 
+        <!-- gameplay -->
         <div id="game-screen">
-          <div id="SCORE">
+          
+          <!-- empty for spacing -->
+          <div class="ghost"></div> 
 
-          </div>
-          <div id="RESULT">
+          <!-- main gameplay area -->
+          <div id="game-box">
 
-          </div>
-
-          <div id="CPU" class="flex-container">
-            <div id="cpu-rock">
-              <img src="../images/rps/rock.png" alt="Rock" width="80" height="80">
-            </div>
-            <div id="cpu-paper">
-              <img src="../images/rps/paper.png" alt="Rock" width="80" height="80">
-            </div>
-            <div id="cpu-scissors">
-              <img src="../images/rps/scissors.png" alt="Rock" width="80" height="80">
+            <!-- CPU's throw -->
+            <div id="RESULT">
+              <img src="../images/swirl.gif" alt="swirl load" width="80" height="80">
+              <p>thinking...</p>
             </div>
 
-          </div>
-
-
-          <div id="choices" class="flex-container">
-              <button id="rock-btn">
+            <div id="CPU" class="flex-container">
+              <div id="cpu-rock">
                 <img src="../images/rps/rock.png" alt="Rock" width="80" height="80">
-              </button>
-              <button id="paper-btn">
-                <img src="../images/rps/paper.png" alt="Paper" width="80" height="80">
-              </button>
-              <button id="scissors-btn">
-                <img src="../images/rps/scissors.png" alt="Scissors" width="80" height="80">
-              </button>
-            </div>       
+              </div>
+              <div id="cpu-paper">
+                <img src="../images/rps/paper.png" alt="Rock" width="80" height="80">
+              </div>
+              <div id="cpu-scissors">
+                <img src="../images/rps/scissors.png" alt="Rock" width="80" height="80">
+              </div>
+
+            </div>
+
+
+            <div id="choices" class="flex-container">
+                <button id="rock-btn">
+                  <img src="../images/rps/rock.png" alt="Rock" width="80" height="80">
+                </button>
+                <button id="paper-btn">
+                  <img src="../images/rps/paper.png" alt="Paper" width="80" height="80">
+                </button>
+                <button id="scissors-btn">
+                  <img src="../images/rps/scissors.png" alt="Scissors" width="80" height="80">
+                </button>
+              </div> 
+          </div>
+          <!-- end game-box -->
+
+          <div id="scorecard">
+            <table>
+              <tr>
+                <td>WINS</td>
+                <td id="win-count">0</td>
+              </tr>
+              <tr>
+                <td>LOSSES</td>
+                <td id="loss-count">0</td>
+              </tr>
+              <tr>
+                <td>TIES</td>
+                <td id="tie-count">0</td>
+              </tr>
+            </table>
+          </div>
+
+           
         </div>
+        <!-- end game-screen -->
            
     </main>
 
@@ -63,16 +93,7 @@
         <p id="loss-message"><strong>Oof. Try again?</strong></p>
         <p id="tie-message"><strong>Keep trying!</strong></p>
     </footer>
-    
-    <!-- look for the corresponding js for this button 
-    <button>Press Me</button>
-    <div id="greeting"></div> 
-    -->
-      
-  <!-- We can call javascript in full .js files for complex stuff 
-      but it should be at the end of our body
-      if not...things might get rendered after the script is called and error
-  -->
+
   <script src="../scripts/rps.js"></script>
 </body>
 </html>

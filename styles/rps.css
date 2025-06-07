@@ -41,9 +41,36 @@ footer
 }
 
 #game-screen {
+  display: none; /* JS will change this */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
   text-align: center;
-  display: none; /* this lets us hide it at the start, the js changes it */
 }
+
+/* ghost div takes same width as scorecard to balance the center */
+.ghost {
+  width: 200px; /* match scorecard width */
+}
+
+#game-box {
+  display: flex; /* always visible when parent is visible */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+#scorecard {
+  padding: 10px;
+  min-width: 150px;
+  background-color: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 
 
 #choices
@@ -71,6 +98,8 @@ footer
 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .selected {
@@ -84,4 +113,31 @@ footer
 .loser {
   border: 3px solid rgb(255, 0, 21);
   border-radius: 10px;
+}
+
+/* scorecard stuff */
+#scorecard {
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+#scorecard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#scorecard td {
+  border: 1px solid black;
+  padding: 12px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 20px;
+}
+
+#scorecard td:nth-child(2) {
+  font-size: 28px;
 }
