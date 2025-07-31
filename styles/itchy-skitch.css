@@ -1,0 +1,17 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #000;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.square {
+  border: 1px solid #ccc;
+  background-color: lightblue;
+  box-sizing: border-box;
+}
+.square:hover {
+  background-color: steelblue;
+  cursor: pointer;
+}
